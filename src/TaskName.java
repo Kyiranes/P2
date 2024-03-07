@@ -7,11 +7,9 @@ public class TaskName {
 
     @Override
     public String toString() {
-        return "TaskName{" +
-                "name='" + name + '\'' +
+        return "name='" + name + '\'' +
                 ", priority=" + priority +
-                ", description='" + description + '\'' +
-                '}';
+                ", description='" + description + '\'';
     }
 
     private String name;
