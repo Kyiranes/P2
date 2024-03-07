@@ -1,10 +1,4 @@
 public class TaskName {
-    public TaskName(String name, String description, int priority) {
-        this.priority = priority;
-        this.description = description;
-        this.name = name;
-    }
-
     @Override
     public String toString() {
         return "name='" + name + '\'' +
@@ -38,16 +32,8 @@ public class TaskName {
         }
     }
 
-    public String getDescription() {
-        return description;
-    }
-
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public void setName(String name) {

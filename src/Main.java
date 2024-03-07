@@ -46,7 +46,7 @@ public class Main {
     }
 
     private static void updateTask() {
-
+        TaskName task = new TaskName();
         System.out.println(tasks);
         System.out.println("Enter the index of the task to update: ");
         int index = input.nextInt();
@@ -56,7 +56,9 @@ public class Main {
         String description = input.nextLine();
         int priority = input.nextInt();
         input.nextLine();
-        TaskName task = new TaskName(name, description, priority);
+        task.setName(name);
+        task.setDescription(description);
+        task.setPriority(priority);
         tasks.set(index, task);
         System.out.println(tasks);
 
@@ -79,7 +81,10 @@ public class Main {
         String description = input.nextLine();
         int priority = input.nextInt();
         input.nextLine();
-        TaskName task = new TaskName(name, description, priority);
+        TaskName task = new TaskName();
+        task.setName(name);
+        task.setDescription(description);
+        task.setPriority(priority);
         tasks.add(task);
 
     }
