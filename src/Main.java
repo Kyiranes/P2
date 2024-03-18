@@ -76,16 +76,15 @@ public class Main {
     }
 
     public static void addTask() {
+        TaskName task = new TaskName();
         System.out.println("Enter the name, description, and priority(0-5) of the task");
         String name = input.nextLine();
         String description = input.nextLine();
         int priority = input.nextInt();
-        input.nextLine();
-        TaskName task = new TaskName();
         task.setName(name);
         task.setDescription(description);
         task.setPriority(priority);
         tasks.add(task);
-
+        System.out.println(tasks);
     }
 }

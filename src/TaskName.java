@@ -25,9 +25,12 @@ public class TaskName {
                     this.priority = 5;
                     break;
                 }
+                else{
+                    this.priority = priority;
+                    break;
+                }
             } catch (Exception e) {
                 System.out.println("Invalid priority value");
-                priority = 0;
             }
         }
     }
